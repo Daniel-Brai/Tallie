@@ -106,7 +106,7 @@ Assessment Project for Tallie Backend Engineer Position
 
 The application will be available at `http://localhost:3000`.
 
-## ⚙️ Configuration
+## Configuration
 
 Create a `.env` file in the root directory:
 
@@ -153,9 +153,9 @@ pnpm db:push
 pnpm db:studio
 ```
 
-## 📚 API Documentation
+## API Documentation
 
-Base URL: `http://localhost:3000/api`
+Base URL: `http://localhost:3000/api/v1`
 
 ### Health Check
 

@@ -12,10 +12,12 @@ import reservationRoutes from './modules/reservations/reservation.routes';
 import status from 'http-status';
 import moment from 'moment';
 import { API_SERVICE_NAME } from './constants';
+import { trailingSlashRedirect } from './middlewares/trailing-slash-redirect';
 
 const app: Application = express();
 
 app.use(helmet({ contentSecurityPolicy: false }));
+app.use(trailingSlashRedirect);
 app.use(httpLogger);
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
