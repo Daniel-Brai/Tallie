@@ -1,0 +1,1 @@
+export const API_SERVICE_NAME = "api/v1"
